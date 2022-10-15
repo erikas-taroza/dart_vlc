@@ -160,7 +160,7 @@ void Player::SetEqualizer(Equalizer* equalizer) {
 }
 
 void Player::SetUserAgent(std::string user_agent) {
-  vlc_instance_.setUserAgent("dart_vlc", user_agent);
+  vlc_instance_.setUserAgent(user_agent, user_agent);
 }
 
 void Player::Add(std::shared_ptr<Media> media) {
